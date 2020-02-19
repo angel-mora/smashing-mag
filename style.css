@@ -84,9 +84,46 @@ header ul {
     /* background-color:; */
 }
 
+.time {
+    font-size: 14px;
+    font-variant: small-caps;
+    padding-top: 20px;
+    color: gray;
+}
+
+.grid-item header {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.grid-item {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.grid-item span {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bould;
+    color: gray;
+    display: inline-block;
+    padding: 12px 0;
+}
+
+.grid-item p {
+    font-size: 18px;
+    line-height: 2rem;
+    color: #383838;
+}
+
 .five,
 .eleven {
     grid-column: span 2;
+    background-color:#606060;
 }
 
 .grid-bottom {
@@ -96,18 +133,88 @@ header ul {
 .ethical-design {
     display: grid;
     grid-template-columns: 1fr;
+    text-align: center;
+    background-color: silver;
+    padding: 20px;
+}
+
+.ethical-design h1 {
+    font-size: 38px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.ethical-design h1 span {
+    background-color: none;
+    color: white;
+    text-shadow: 2px 2px #505050;
+}
+
+.ethical-design p {
+    line-height: 2em;
+    font-size: 20px;
 }
 
 .community-links {
     display: grid;
     grid-gap: 20px;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     grid-template-columns: repeat(2, 1fr);
+}
+
+.main {
+    grid-column: span 2;
+    padding: 20px 20px;
+}
+
+.main h1 {
+    font-weight: normal;
+    color: gray;
+}
+
+.main p {
+    padding: 20px 0;
+    color: #383838;
+    line-height: 2em;
+}
+
+.person-of-week {
+    padding: 30px 20px;
+}
+
+.person-of-week .autor{
+    font-family: 'roboto', serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.person-of-week h1 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.person-of-week p {
+    color: #383838;
+    line-height: 2em;    
 }
 
 .featured-book {
     display: grid;
     grid-template-rows: 1fr;
+    background-color:#606060;
+    color: white;
+    padding: 35px;
+}
+
+.featured-book h1 {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.featured-book p {
+    line-height: 2em;
 }
 
 .curated-posts {
@@ -115,8 +222,46 @@ header ul {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.curated-posts article {
+    padding: 20px 20px;
+}
+
+.curated-posts span {
+    font-size: 11px;
+    color: gray;
+}
+
+.curated-posts h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.curated-posts li {
+    color: gray;
+    text-decoration: underline;
+}
+
 .smashing-newsletter {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
+    background-color:#606060;
+    color: white;
+    margin: 30px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 30px;
 }
+
+.smashing-newsletter h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 0;   
+}
+
+.smashing-newsletter p {
+    line-height: 2em;
+}
+
