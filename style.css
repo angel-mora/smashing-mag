@@ -37,20 +37,44 @@ header ul {
 
 .latest-articles {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+
+.gray {
+    background-color: #707070;
+}
+
+.light-gray {
+    background-color: gray;
+}
+
+.dark-gray {
+    background-color:#606060;
+}
+
+.latest-title {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 2;
+}
+
+.latest-articles h1 {
+    background-color: white;
 }
 
 .latest-title {
     display: grid;
     justify-items: center;
-    align-items: center;
+    align-content: center;
     height: 200px;
     font-size: 30px;
-    border: 1px solid black;
     padding: 20px;
 }
 
 .featured-articles-container {
+    grid-column: 1 / -1;    
+    grid-row: 1 / -1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -74,6 +98,10 @@ header ul {
     list-style-type: none;
     margin-right: 25px;
     margin-top: 2rem;
+}
+
+.latest-articles-container h4 {
+    transform: rotate(-90deg);
 }
 
 .grid-container {
