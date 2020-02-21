@@ -126,8 +126,7 @@ h2 {
 .grid-container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .time {
@@ -169,8 +168,31 @@ h2 {
 
 .five,
 .eleven {
-  grid-column: span 2;
   background-color: #606060;
+}
+
+.eleven {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: white;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  border: 20px solid gray;
+  margin: 25px auto;
+}
+
+.eleven-text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.eleven-text p {
+  color: white;
 }
 
 .grid-bottom {
