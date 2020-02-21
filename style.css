@@ -1,0 +1,399 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(9, auto);
+}
+
+.invisible {
+  display: none;
+}
+
+.gray-header,
+footer {
+  background-color: #707070;
+  color: white;
+}
+
+header ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-family: 'Roboto', sans-serif;
+  height: 185px;
+  justify-items: center;
+  align-items: center;
+  font-size: 27px;
+  list-style-type: none;
+}
+
+.latest-articles {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+}
+
+.gray {
+  background-color: #686868;
+}
+
+.light-gray {
+  background-color: gray;
+}
+
+.dark-gray {
+  background-color: #606060;
+}
+
+.latest-articles h1,
+h2 {
+  background-color: white;
+}
+
+.latest-title {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: 200px;
+  font-size: 30px;
+  padding: 20px;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: 2;
+}
+
+.featured-articles-container {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  color: gray;
+  font-family: 'roboto', sans-serif;
+}
+
+.featured-articles-container h2 {
+  padding: 20px 0;
+}
+
+.featured-articles-container ul {
+  font-size: 14px;
+}
+
+.featured-article {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 936px;
+  font-size: 36px;
+  grid-auto-columns: auto;
+}
+
+.featured-article .autor {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.featured-article ul {
+  display: flex;
+  font-weight: bold;
+}
+
+.featured-article li {
+  list-style-type: none;
+  margin-right: 25px;
+  margin-top: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.time {
+  font-size: 14px;
+  font-variant: small-caps;
+  padding-top: 20px;
+  color: gray;
+}
+
+.grid-item header {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 0;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.grid-item {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 600px;
+}
+
+.grid-item span {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bould;
+  color: gray;
+  display: inline-block;
+  padding: 12px 0;
+}
+
+.grid-item p {
+  font-size: 18px;
+  line-height: 2rem;
+  color: #383838;
+}
+
+.five,
+.eleven {
+  background-color: #606060;
+}
+
+.eleven {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: white;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  border: 20px solid gray;
+  margin: 25px auto;
+}
+
+.eleven-text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.eleven-text p {
+  color: white;
+}
+
+.grid-bottom {
+  grid-column: 1 / -1;
+}
+
+.ethical-design {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  background-color: silver;
+  padding: 20px;
+}
+
+.ethical-design h2 {
+  font-size: 38px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.curated-posts span {
+  font-size: 11px;
+  color: gray;
+}
+
+.ethical-design h2 span {
+  background-color: none;
+  color: white;
+  text-shadow: 2px 2px #505050;
+}
+
+.ethical-design p {
+  line-height: 2em;
+  font-size: 20px;
+}
+
+.community-links {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main {
+  grid-column: span 2;
+  padding: 20px 20px;
+}
+
+.main h1 {
+  font-weight: normal;
+  color: gray;
+}
+
+.main p {
+  padding: 20px 0;
+  color: #383838;
+  line-height: 2em;
+}
+
+.person-of-week {
+  padding: 30px 20px;
+}
+
+.person-of-week .autor {
+  font-family: 'roboto', serif;
+  font-size: 20px;
+  color: gray;
+}
+
+.person-of-week h2 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.person-of-week p {
+  color: #383838;
+  line-height: 2em;
+}
+
+.featured-book {
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: #606060;
+  color: white;
+  padding: 35px;
+}
+
+.featured-book h2 {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.featured-book p {
+  line-height: 2em;
+}
+
+.curated-posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.curated-posts article {
+  padding: 20px 20px;
+}
+
+.curated-posts h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.curated-posts li {
+  color: gray;
+  text-decoration: underline;
+}
+
+.smashing-newsletter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  background-color: #606060;
+  color: white;
+  margin: 50px;
+  border-radius: 12px;
+  text-align: center;
+  padding: 30px;
+}
+
+.smashing-newsletter h2 {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px 0;
+  background-color: rgb(41, 38, 38);
+}
+
+.smashing-newsletter p {
+  line-height: 2em;
+}
+
+.all-topics {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.all-topics h4 {
+  display: flex;
+  flex: 1 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 2rem;
+}
+
+.topics {
+  display: flex;
+  flex: 1 100%;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  flex-flow: row wrap;
+  padding: 4% 10%;
+}
+
+.topics li {
+  font-size: 24px;
+  flex-grow: 1;
+  margin-right: 30px;
+}
+
+.footer-notes {
+  display: flex;
+  flex: 1 100%;
+  flex-direction: column;
+}
+
+.footer-notes p {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 100%;
+  height: 200px;
+}
+
+.footer-links ul {
+  display: flex;
+  margin-top: 2rem;
+  font-size: 22px;
+  padding-left: 10%;
+  padding-right: 10%;
+  list-style-type: none;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
